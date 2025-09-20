@@ -19,14 +19,16 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+```
 
-'''
 admin.py
+
 from django.contrib import admin
 from .models import Car_DB,Car_DBAdmin
 admin.site.register (Car_DB,Car_DBAdmin)
 
 models.py
+
 from django.db import models
 from django.contrib import admin
 class Car_DB(models.Model):
@@ -36,7 +38,8 @@ class Car_DB(models.Model):
     Mfg_Date = models.DateField()
 class Car_DBAdmin(admin.ModelAdmin):
     list_display = ["Brand_Name","Model_No","Customer_name","Mfg_Date"]
-'''
+
+```
 
 ## OUTPUT
 ![alt text](<Screenshot 2025-09-18 222106.png>)
